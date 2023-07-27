@@ -1,0 +1,18 @@
+{
+  "name": "codeial",
+  "version": "1.0.0",
+  "description": "My all social media web aaplication",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon index.js",
+    "test": "\t"
+  },
+  "keywords": [
+    "social"
+  ],
+  "author": "jaskirat singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
