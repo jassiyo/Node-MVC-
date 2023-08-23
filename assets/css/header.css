@@ -1,0 +1,35 @@
+:root{
+    --primary:rgb(92, 166, 92)
+}
+.main-container{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    padding-bottom: 0.2rem;
+    align-items: center;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+}
+h1{
+    color: var(--primary);
+    margin: 0;
+    font-size: 2.2rem;
+}
+li{
+    margin: 0.5rem;
+}
+
+.nav-container li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 0.8rem;
+}
+.btn-sm{
+    color: var(--primary);
+    border: 1px solid ;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+}

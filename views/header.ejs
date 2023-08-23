@@ -1,3 +1,32 @@
-<header>
-    header page
-</header>
+<head>
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="main-container">
+            <h1>Codieal</h1>
+            <div class="nav-container">
+                <% if (locals.user){ %>
+
+                    <li>
+                        <a class="btn-sm" href="/user/profile">Jaskirat</a>
+                    </li>
+                    <li>
+                        <a class="btn-sm" href="/user/sign-out">Sign-Out</a>
+                    </li>
+
+                    <% }else{ %>
+                        <li>
+                            <a class="btn-sm" href="/user/sign-in">Sign-in</a>
+                        </li>
+                        <li>
+                            <a class="btn-sm" href="/user/sign-up">Sign-up</a>
+                        </li>
+
+                        <% } %>
+            </div>
+        </div>
+    </header>
+</body>
