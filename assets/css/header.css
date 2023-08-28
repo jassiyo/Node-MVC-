@@ -30,6 +30,6 @@ li{
 .btn-sm{
     color: var(--primary);
     border: 1px solid ;
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
     font-size: 1.1rem;
 }

@@ -5,9 +5,29 @@
         </title>
     </head>
         <body>
-            <!-- <%- include('header');-%> -->
             <h1>This is codieal / <%= title %> </h1>
-            <!-- <%- include('footer');-%> -->
-            
+            <section class="feed-post">
+                <h4>Post</h4>
+                <form action="/post/create" id="new-post-form" method="post">
+                    <textarea name="content" cols="30" rows="3" placeholder="Type here..."></textarea>
+                    <input type="submit">
+                </form>
+
+                <div id="post-list-container">
+                    <ul>
+                        <% for(post of post) { %> 
+                            <p>
+
+                                <li>
+                                    <%= post.content %>
+                                    <small>
+                                    <%= post.user.name %>
+                                    </small>
+                                </li>
+                            </p>
+                            <%} %>
+                    </ul>
+                </div>
+            </section>
         </body>
 </html>
