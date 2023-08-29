@@ -2,7 +2,15 @@ const post = require('../models/post');
 
 module.exports.home = async function(req, res) {
     try {
-        const posts = await post.find({}).populate('user').exec();
+        const posts = await (await post.find({})
+        .populate('user')
+        .populate({
+            path:'comment',
+            populate:{
+                path: 'user'
+            }
+        })
+        );
         return res.render('home', {
             title: 'Codieal | Home',
             post: posts
